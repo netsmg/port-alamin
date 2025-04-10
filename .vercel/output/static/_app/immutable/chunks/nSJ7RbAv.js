@@ -1,1 +1,0 @@
-import{t as n,a as i}from"./DrjBu-Pq.js";import{a1 as s,n as l,a2 as e}from"./CnMiI8Eq.js";import{s as v}from"./4Q7kwbEx.js";var d=n('<div class="text-xs tag svelte-1t6b5el"><span class="tag__text svelte-1t6b5el"><!></span></div>');function x(r,o){var a=d(),t=s(a),p=s(t);v(p,()=>o.children??l),e(t),e(a),i(r,a)}export{x as T};

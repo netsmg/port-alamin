@@ -1,1 +1,0 @@
-function o(){return new Date().getFullYear()-1999}function i(){return new Date().toLocaleString()}function c(){const e=new Date,n=e.getTime()+e.getTimezoneOffset()*6e4;return new Date(n+420*6e4).toLocaleString()}export{i as a,c as b,o as g};
