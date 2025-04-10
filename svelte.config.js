@@ -17,7 +17,7 @@ import cspDirectives from './csp-directives.mjs';
 const config = {
 	extensions: ['.svelte', '.svx'],
 	kit: {
-		adapter: adapter({ runtime: 'nodejs' }),
+		adapter: adapter({ runtime: 'edgejs' }),
 		alias: {
 			$blogImages: './src/lib/assets/images/blog',
 			$components: './src/lib/components',
