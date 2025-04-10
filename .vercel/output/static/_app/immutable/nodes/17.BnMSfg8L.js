@@ -1,0 +1,1 @@
+import{t as a,a as o}from"../chunks/DrjBu-Pq.js";import"../chunks/CeIxqNZp.js";import{f as i,$ as p}from"../chunks/CnMiI8Eq.js";import{P as s}from"../chunks/DE6164g9.js";var m=a('<!> <div class="threejs svelte-1cyzoi6">Work in progress</div>',1);function c(r){var e=m(),t=i(e);s(t,{pageTitle:"Experiment"}),p(2),o(r,e)}export{c as component};

@@ -1,0 +1,1 @@
+import{t,a as e}from"../chunks/DrjBu-Pq.js";import"../chunks/CeIxqNZp.js";import{$ as i}from"../chunks/CnMiI8Eq.js";var p=t("<p>details of the things you use on a daily basis</p> <div>PC</div> <div>Keyboard: CMK87</div>",1);function d(a){var o=p();i(4),e(a,o)}export{d as component};

@@ -1,0 +1,1 @@
+import{t as s,a as t}from"./DrjBu-Pq.js";import{a1 as i,n as e,a2 as p}from"./CnMiI8Eq.js";import{s as d}from"./4Q7kwbEx.js";var m=s('<div class="markdown"><!></div>');function l(o,r){var a=m(),n=i(a);d(n,()=>r.children??e),p(a),t(o,a)}export{l as M};
