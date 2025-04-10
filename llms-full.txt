@@ -1,6 +1,6 @@
 <SYSTEM>This is the full developer documentation for Svelte and SvelteKit.</SYSTEM>
 
-# Start of Svelte documentation
+# Starts of Svelte documentation
 
 
 # Overview
