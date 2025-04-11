@@ -11,7 +11,7 @@
 <div class="end text-xs">
 	<div class="end__text">
 		Copyright {`${COPYRIGHT_ENTITY}`}
-		{currentYear} Nguyen Dang Khoa (wentallout), All Rights Reserved.
+		{currentYear} Al-amin (webuinet), All Rights Reserved.
 	</div>
 
 	<div class="end__text">
