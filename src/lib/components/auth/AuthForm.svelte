@@ -1,7 +1,7 @@
 <script>
 	import Button from '$components/button/Button.svelte';
 	import TextInput from '$components/input/TextInput.svelte';
-	import { EnvelopeSimple, LockKey, Eye, EyeSlash, LinkedinLogo, GithubLogo } from '$lib/assets/icons/icons';
+	import { EnvelopeSimple, User, Eye, EyeSlash, LinkedinLogo, GithubLogo } from '$lib/assets/icons/icons';
 	import SectionTitle from '$sections/SectionTitle.svelte';
 	import { slide } from 'svelte/transition';
 
@@ -40,7 +40,7 @@
 				autocomplete="current-password"
 			>
 				{#snippet icon()}
-					<LockKey />
+					<User />
 				{/snippet}
 				{#snippet rightIcon()}
 					<button 
