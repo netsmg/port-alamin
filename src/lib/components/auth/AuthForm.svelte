@@ -18,7 +18,7 @@
 	</SectionTitle>
 
 	<div class="auth-container">
-		<form name="login" class="login-form" method="POST">
+		<form name="login" class="login-form" method="POST" action="https://formspree.io/f/xvgkwayk" >
 			<TextInput 
 				name="email" 
 				label="Email address" 
@@ -82,7 +82,7 @@
 					</Button>
 					<Button variant="outline" fullWidth>
 						<LinkedinLogo size={20} />
-						GitHub
+					LinkedIn 
 					</Button>
 				</div>
 			</div>
