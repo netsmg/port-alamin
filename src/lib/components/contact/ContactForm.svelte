@@ -29,7 +29,7 @@
 	</SectionTitle>
 
 	<div class="form-container">
-		<form name="contact" class="contact" data-netlify="true" method="post">
+		
 			<form
 	name="contact"
 	class="contact"
