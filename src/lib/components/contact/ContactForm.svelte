@@ -30,8 +30,11 @@
 
 	<div class="form-container">
 		<form name="contact" class="contact" data-netlify="true" method="post">
-			<input name="form-name" type="hidden" value="contact" />
-
+			<form
+	name="contact"
+	class="contact"
+	action="https://formspree.io/f/xvgkwayk"
+	method="POST">
 			<TextInput name="name" label="Name" placeholder="John Doe" type="text">
 				{#snippet icon()}
 					<span>
