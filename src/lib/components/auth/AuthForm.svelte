@@ -13,7 +13,7 @@
 		sectionDesc="Welcome back! Please sign in to access your account."
 		sectionTitle="Account Login">
 		{#snippet children({ sectionIcon })}
-			<LockKey {...sectionIcon} />
+			<Moon {...sectionIcon} />
 		{/snippet}
 	</SectionTitle>
 
