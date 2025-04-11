@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-auto';
 import { mdsvex } from 'mdsvex';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
@@ -17,7 +17,7 @@ import cspDirectives from './csp-directives.mjs';
 const config = {
 	extensions: ['.svelte', '.svx'],
 	kit: {
-		adapter: adapter({ runtime: 'nodejs18.x' }),
+		adapter: adapter(),
 		alias: {
 			$blogImages: './src/lib/assets/images/blog',
 			$components: './src/lib/components',
