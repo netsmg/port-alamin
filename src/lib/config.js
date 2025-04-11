@@ -36,7 +36,7 @@ const website = {
   icon: 'static/icon-512.png',
   backgroundColor: '#121212',
   themeColor: '#ffbb00',
-  description: 'Nguyen Dang Khoa - Professional UI/UX Designer and Frontend Developer since 2022',
+  description: 'Muhammad Al-amin - Professional UI/UX Designer and Frontend Developer since 2022',
 
   facebookAuthorPage: `https://www.facebook.com/${facebookAuthorPageName}`,
   facebookAuthorPageName,
