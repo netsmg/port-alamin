@@ -18,7 +18,7 @@
 
 	const seoProps = {
 		breadcrumbs,
-		metadescription: 'Welcome to Portfolio of Khoa',
+		metadescription: 'Welcome to Portfolio of Al-amin',
 		slug: '',
 		title: 'Home'
 	};
