@@ -1,7 +1,7 @@
 <script>
 	import Button from '$components/button/Button.svelte';
 	import TextInput from '$components/input/TextInput.svelte';
-	import { EnvelopeSimple, User, Eye, EyeSlash, LinkedinLogo, GithubLogo } from '$lib/assets/icons/icons';
+	import { EnvelopeSimple, User, Eye, LinkedinLogo, GithubLogo } from '$lib/assets/icons/icons';
 	import SectionTitle from '$sections/SectionTitle.svelte';
 	import { slide } from 'svelte/transition';
 
@@ -49,7 +49,7 @@
 						class="password-toggle"
 					>
 						{#if passwordVisible}
-							<EyeSlash size={18} />
+							<Eye size={18} />
 						{:else}
 							<Eye size={18} />
 						{/if}
