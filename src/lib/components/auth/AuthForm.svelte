@@ -1,173 +1,116 @@
 <script>
 	import Button from '$components/button/Button.svelte';
+	import CopyToClipboard from '$components/common/CopyToClipboard.svelte';
+	import ExLink from '$components/common/ExLink.svelte';
+	import TextArea from '$components/input/TextArea.svelte';
 	import TextInput from '$components/input/TextInput.svelte';
-	import { EnvelopeSimple, User, Moon, LinkedinLogo, GithubLogo } from '$lib/assets/icons/icons';
+	import {
+		ArrowCounterClockwise,
+		At,
+		Clock,
+		EnvelopeSimple,
+		PaperPlaneRight,
+		Phone,
+		User
+	} from '$lib/assets/icons/icons';
 	import SectionTitle from '$sections/SectionTitle.svelte';
-	
-	let passwordVisible = false;
-	let rememberMe = false;
+	import { slide } from 'svelte/transition';
 </script>
 
 <section>
 	<SectionTitle
-		sectionDesc="Welcome back! Please sign in to access your account."
-		sectionTitle="Account Login">
+		sectionDesc="Create your account by signing up."
+		sectionTitle="Get started..">
 		{#snippet children({ sectionIcon })}
-			<Moon {...sectionIcon} />
+			<EnvelopeSimple {...sectionIcon} />
 		{/snippet}
 	</SectionTitle>
 
-	<div class="auth-container">
-		<form name="login" class="login-form" method="POST" action="https://formspree.io/f/xvgkwayk" >
-			<TextInput 
-				name="email" 
-				label="Email address" 
-				placeholder="name@company.com" 
-				type="email"
-				autocomplete="username"
-			>
+
+	<div class="form-container">
+		
+			<form
+	name="contact"
+	class="contact"
+	action="https://formspree.io/f/xvgkwayk"
+	method="POST">
+			<TextInput name="name" label="Name" placeholder="John Doe" type="text">
 				{#snippet icon()}
-					<EnvelopeSimple />
+					<span>
+						<User />
+					</span>
+				{/snippet}
+			</TextInput>
+			<TextInput name="email" label="Email" placeholder="username@gmail.com" type="email">
+				{#snippet icon()}
+					<span>
+						<At />
+					</span>
+				{/snippet}
+			</TextInput>
+<TextInput name="password" label="password" placeholder="your credentials" type="password">
+				{#snippet icon()}
+					<span>
+						<At />
+					</span>
 				{/snippet}
 			</TextInput>
 
-			<TextInput
-				name="password"
-				label="Password"
-				placeholder="••••••••"
-				type={passwordVisible ? 'text' : 'password'}
-				autocomplete="current-password"
-			>
-				{#snippet icon()}
-					<User />
-				{/snippet}
-				{#snippet rightIcon()}
-					<button 
-						type="button" 
-						on:click={() => passwordVisible = !passwordVisible}
-						class="password-toggle"
-					>
-						{#if passwordVisible}
-							<Moon size={18} />
-						{:else}
-							<Moon size={18} />
-						{/if}
-					</button>
-				{/snippet}
-			</TextInput>
+			
 
-			<div class="form-options">
-				<label class="remember-me">
-					<input type="checkbox" bind:checked={rememberMe} />
-					<span>Remember me</span>
-				</label>
-				<a href="/forgot-password" class="forgot-password">Forgot password?</a>
+			<div class="contact__btn">
+				<Button
+					backgroundColor="var(--color-primary)"
+					glowColor="var(--color-primary)"
+					label="Login"
+					type="submit">
+					<PaperPlaneRight color="var(--color-black)" height="16" width="16" />
+				</Button>
+
+				<Button
+					backgroundColor="var(--color-bg-layout)"
+					borderColor="var(--color-error)"
+					glowColor="var(--color-error)"
+					label="Reset"
+					labelColor="var(--color-error)"
+					shadowColor="var(--color-error)"
+					type="reset">
+					<ArrowCounterClockwise color="var(--color-error)" height="16" width="16" />
+				</Button>
 			</div>
-
-			<Button
-				fullWidth
-				type="submit"
-				backgroundColor="var(--color-primary)"
-				glowColor="var(--color-primary)"
-			>
-				Sign In
-			</Button>
-
-			<div class="social-auth">
-				<p class="divider">Or continue with</p>
-				<div class="social-buttons">
-					<Button variant="outline" fullWidth>
-						<GoogleLogo size={20} />
-						Google
-					</Button>
-					<Button variant="outline" fullWidth>
-						<LinkedinLogo size={20} />
-					LinkedIn 
-					</Button>
-				</div>
-			</div>
-
-			<p class="signup-link">
-				Don&apos;t have an account? <a href="/signup">Create account</a>
-			</p>
 		</form>
+
+		
 	</div>
 </section>
 
 <style>
-	.auth-container {
-		max-width: 440px;
-		margin: 0 auto;
-		padding: 0 var(--space-mid);
-	}
-
-	.login-form {
+	.form-container {
 		display: grid;
-		gap: var(--space-mid);
-		background: var(--color-bg-layout);
-		padding: var(--space-xl);
-		border-radius: var(--radius-lg);
-		box-shadow: var(--shadow-lg);
+		gap: var(--space-xl);
+		align-items: start;
+		grid-template-columns: 1fr;
 	}
 
-	.password-toggle {
-		background: none;
-		border: none;
-		cursor: pointer;
-		color: var(--color-text-secondary);
-		padding: 4px;
+	@media (min-width: 768px) {
+		.form-container {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
-	.form-options {
+	.contact {
+		width: 100%;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		font-size: var(--text-sm);
+		flex-direction: column;
+		max-width: var(--text-width);
 	}
 
-	.remember-me {
+	.contact__btn {
+		margin-top: var(--space-mid);
+		width: 100%;
+
 		display: flex;
-		align-items: center;
-		gap: var(--space-xs);
-	}
-
-	.forgot-password {
-		color: var(--color-primary);
-		text-decoration: none;
-	}
-
-	.social-auth {
-		display: grid;
-		gap: var(--space-mid);
-	}
-
-	.divider {
-		display: flex;
-		align-items: center;
-		gap: var(--space-mid);
-		color: var(--color-text-secondary);
-	}
-
-	.divider::before,
-	.divider::after {
-		content: '';
-		flex: 1;
-		border-bottom: 1px solid var(--color-border);
-	}
-
-	.social-buttons {
-		display: flex;
-		gap: var(--space-mid);
-	}
-
-	.signup-link {
-		text-align: center;
-		color: var(--color-text-secondary);
-	}
-
-	.signup-link a {
-		color: var(--color-primary);
-		text-decoration: none;
-		font-weight: 500;
+		flex-wrap: wrap;
+		gap: var(--space-small);
 	}
 </style>
