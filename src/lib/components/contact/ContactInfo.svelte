@@ -22,26 +22,26 @@
 
 <div class="contact__other">
 	<div class="contact__address fancy-border">
-		<ExLink href="mailto:wentallout@gmail.com">
+		<ExLink href="mailto:almin.webuinet@gmail.com">
 			<div class="address__title text-base">
 				<EnvelopeSimple />
 				<div>Email</div>
 			</div>
 		</ExLink>
-		<CopyToClipboard textToCopy="wentallout@gmail.com">
-			<div class="address__desc text-small">wentallout@gmail.com</div>
+		<CopyToClipboard textToCopy="alamin.webuinet@gmail.com">
+			<div class="address__desc text-small">alamin.webuinet@gmail.com</div>
 		</CopyToClipboard>
 	</div>
 
 	<div class="contact__address fancy-border">
-		<ExLink href="tel:+84929066331">
+		<ExLink href="tel:+8801********">
 			<div class="address__title text-base">
 				<Phone />
 				<div>Phone / WhatsApp / Zalo / Telegram</div>
 			</div>
 		</ExLink>
-		<CopyToClipboard textToCopy="(+84)929066331">
-			<div class="address__desc text-small">(+84)929066331</div>
+		<CopyToClipboard textToCopy="(+88)********">
+			<div class="address__desc text-small">(+88)*******</div>
 		</CopyToClipboard>
 	</div>
 
