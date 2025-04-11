@@ -25,7 +25,7 @@
 				<div class="list__title">About</div>
 				<ul class="list__nav">
 					<li class="nav-list__link">
-						Khoa Nguyen. Provide affordable websites for your business.
+						Muhammad Al-amin. Provide affordable websites for your business.
 					</li>
 					<li class="nav-list__link">
 						<a class="link" href="/about">More about me </a>
@@ -75,20 +75,20 @@
 				<div class="list__title">Contact</div>
 				<ul class="list__nav">
 					<li>
-						<ExLink href="https://goo.gl/maps/GLt6uhYWwU91fXz49">
+						<ExLink href="https://goo.gl/maps/">
 							<div class="nav-list__link">
 								<MapPin />
-								Ho Chi Minh City, Vietnam
+								Dhaka, Bangladesh.
 							</div>
 						</ExLink>
 					</li>
 
 					<li>
-						<ExLink href="mailto:wentallout@gmail.com">
+						<ExLink href="mailto:alamin.webuinet@gmail.com">
 							<div class="nav-list__link">
 								<EnvelopeSimple />
 								<div class="">
-									<span>wentallout@</span>
+									<span>alamin.webuinet@</span>
 									<b class="obf">j</b>
 									<span>gmail.com</span>
 								</div>
@@ -96,22 +96,22 @@
 						</ExLink>
 					</li>
 					<li>
-						<ExLink href="tel:+84929066331">
+						<ExLink href="tel:+8880">
 							<div class="nav-list__link">
 								<Phone />
-								+84 929066331
+								+88 01
 							</div>
 						</ExLink>
 					</li>
 					<li>
-						<ExLink href="https://www.linkedin.com/in/wentallout">
+						<ExLink href="https://www.linkedin.com/in/webuinet">
 							<div class="nav-list__link">
 								<LinkedinLogo />Linkedin
 							</div>
 						</ExLink>
 					</li>
 					<li>
-						<ExLink href="https://www.instagram.com/wentallout/saved">
+						<ExLink href="https://www.instagram.com/webuinet/saved">
 							<div class="nav-list__link">
 								<InstagramLogo />
 								Instagram
@@ -119,7 +119,7 @@
 						</ExLink>
 					</li>
 					<li>
-						<ExLink href="https://github.com/wentallout">
+						<ExLink href="https://github.com/netsmg">
 							<div class="nav-list__link">
 								<GitHubLogo />
 								GitHub
