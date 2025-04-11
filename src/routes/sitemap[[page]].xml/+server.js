@@ -9,7 +9,7 @@ export const GET = async ({ params }) => {
 
 	return await sitemap.response({
 		excludeRoutePatterns: ['/blog/category/*'],
-		origin: 'https://wentallout.io.vn',
+		origin: 'https://port-alamin.vercel.app',
 		page: params.page,
 		paramValues: {
 			'/blog/[slug]': blogSlugs,
