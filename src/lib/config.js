@@ -21,18 +21,18 @@ export const navItems = [
   },
 ]
 
-const facebookPageName = 'wentallout'
-const facebookAuthorPageName = 'wentallout.uiux'
+const facebookPageName = 'alamin.webuinet'
+const facebookAuthorPageName = 'alamin.webuinet'
 
 const website = {
-  author: 'Khoa Nguyen',
+  author: 'Al-amin',
   ogLanguage: 'en_US',
   siteLanguage: 'en-US',
-  contactEmail: 'wentallout@gmail.com',
+  contactEmail: 'alamin.webuinet@gmail.com',
 
-  siteTitle: 'Tailor-made websites for your business - Khoa Nguyen',
+  siteTitle: 'Tailor made websites for your business - Al-amin',
   siteShortTitle: 'Tailor-made websites for your business',
-  siteUrl: 'https://wentallout.io.vn',
+  siteUrl: 'https://port-alamin.vercel.app',
   icon: 'static/icon-512.png',
   backgroundColor: '#121212',
   themeColor: '#ffbb00',
@@ -42,11 +42,11 @@ const website = {
   facebookAuthorPageName,
   facebookPage: `https://www.facebook.com/${facebookPageName}`,
   facebookPageName,
-  githubPage: 'wentallout',
-  linkedinProfile: 'wentallout',
-  telegramUsername: 'wentallout',
-  tiktokUsername: '@wentallout',
-  twitterUsername: 'wentallout',
+  githubPage: 'netsmg',
+  linkedinProfile: 'webuinet',
+  telegramUsername: 'webuinet',
+  tiktokUsername: '@webuinet',
+  twitterUsername: 'webuunet',
   twitterUserId: '1391413398286471168',
 }
 
