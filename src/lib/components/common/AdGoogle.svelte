@@ -37,7 +37,7 @@
 	<ins
 		style={adStyle}
 		class="adsbygoogle"
-		data-ad-client="ca-pub-2238795577080818"
+		data-ad-client="ca-pub-3975673963780871"
 		data-ad-format={adFormat}
 		data-ad-slot={slotId}
 		data-full-width-responsive={responsive.toString()}>
