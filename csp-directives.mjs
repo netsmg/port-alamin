@@ -5,7 +5,7 @@ const cspDirectives = {
 		'https://pagead2.googlesyndication.com'
 	],
 	'default-src': ["'self'", "'unsafe-inline'", 'https://ep1.adtrafficquality.google'],
-	'form-action': ["'self'"],
+	'form-action': ["'self'", 'https://formspree.io'],
 	'frame-ancestors': ["'self'"],
 	'frame-src': [
 		"'self'",
