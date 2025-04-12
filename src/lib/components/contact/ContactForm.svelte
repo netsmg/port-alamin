@@ -17,6 +17,33 @@
 	import { slide } from 'svelte/transition';
 
 	import ContactInfo from './ContactInfo.svelte';
+
+	let submitted = false;
+
+	async function handleSubmit(event) {
+		const formData = new FormData(event.target);
+		
+		try {
+			const response = await fetch('https://formspree.io/f/xvgkwayk', {
+				method: 'POST',
+				body: formData,
+				headers: {
+					'Accept': 'application/json'
+				}
+			});
+			
+			if (response.ok) {
+				submitted = true;
+				event.target.reset();
+			}
+		} catch (error) {
+			console.error('Error:', error);
+		}
+	}
+
+	function handleReset() {
+		submitted = false;
+	}
 </script>
 
 <section>
@@ -29,12 +56,12 @@
 	</SectionTitle>
 
 	<div class="form-container">
-		
-			<form
-	name="contact"
-	class="contact"
-	action="https://formspree.io/f/xvgkwayk"
-	method="POST">
+		<form
+			name="contact"
+			class="contact"
+			on:submit|preventDefault={handleSubmit}
+			on:reset={handleReset}
+		>
 			<TextInput name="name" label="Name" placeholder="John Doe" type="text">
 				{#snippet icon()}
 					<span>
@@ -71,6 +98,12 @@
 					<ArrowCounterClockwise color="var(--color-error)" height="16" width="16" />
 				</Button>
 			</div>
+
+			{#if submitted}
+				<div class="success-message">
+					Message sent successfully! I'll get back to you soon.
+				</div>
+			{/if}
 		</form>
 
 		<ContactInfo />
@@ -105,5 +138,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--space-small);
+	}
+
+	.success-message {
+		color: var(--color-success);
+		margin-top: var(--space-small);
+		padding: var(--space-xs);
+		border-radius: var(--radius-sm);
+		background: var(--color-success-bg);
+		border: 1px solid var(--color-success-border);
 	}
 </style>
