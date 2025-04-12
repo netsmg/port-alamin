@@ -32,7 +32,7 @@
 			<form
 	name="contact"
 	class="contact"
-	action="https://formspree.io/f/xvgkwayk"
+	action="/"
 	method="POST">
 			<TextInput name="name" label="Name" placeholder="John Doe" type="text">
 				{#snippet icon()}
