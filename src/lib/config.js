@@ -31,7 +31,7 @@ const website = {
   contactEmail: 'alamin.webuinet@gmail.com',
 
   siteTitle: 'Tailor made websites for your business - Al-amin',
-  siteShortTitle: 'Tailor-made websites for your business',
+  siteShortTitle: 'Portfolio for Al-amin',
   siteUrl: 'https://port-alamin.vercel.app',
   icon: 'static/icon-512.png',
   backgroundColor: '#121212',
@@ -46,7 +46,7 @@ const website = {
   linkedinProfile: 'webuinet',
   telegramUsername: 'webuinet',
   tiktokUsername: '@webuinet',
-  twitterUsername: 'webuunet',
+  twitterUsername: 'webuinet',
   twitterUserId: '1391413398286471168',
 }
 
