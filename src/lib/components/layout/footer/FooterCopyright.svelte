@@ -1,25 +1,25 @@
 <script>
-	import { VERSION } from '@sveltejs/kit';
+	//import { VERSION } from '@sveltejs/kit';
 	import ExLink from '$components/common/ExLink.svelte';
-	import Badges from '$components/layout/footer/Badges.svelte';
+	//import Badges from '$components/layout/footer/Badges.svelte';
 	import { COPYRIGHT_ENTITY } from '$lib/constants/entities.js';
 
 	let currentYear = new Date().getFullYear();
 </script>
 
-<Badges />
+<!-- <Badges /> --!/>
 <div class="end text-xs">
 	<div class="end__text">
 		Copyright {`${COPYRIGHT_ENTITY}`}
 		{currentYear} Al-amin (webuinet), All Rights Reserved.
 	</div>
 
-	<div class="end__text">
+	<!-- <div class="end__text"> 
 		Made by Khoa with
 		<a href="https://svelte.dev" target="_blank">
 			<span class="end__svelte">SvelteKit {VERSION}</span>
 		</a>
-	</div>
+	</div> --!/>
 </div>
 
 <style>
