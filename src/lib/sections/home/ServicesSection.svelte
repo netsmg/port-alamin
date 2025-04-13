@@ -64,7 +64,7 @@
 				</ul>
 			</div>
 		</div>
-		<a class="service__btn" href="https://cal.com/wentallout/web">
+		<a class="service__btn" href="/contact">
 			<Button
 				backgroundColor="var(--color-bg-layout)"
 				borderColor="var(--color-text)"
