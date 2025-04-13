@@ -8,7 +8,7 @@
 <!-- Footer -->
 <div class="end text-xs">
 	<div class="end__text">
-		© {currentYear} {COPYRIGHT_ENTITY} Al-amin (webuinet). All Rights Reserved.
+		© {currentYear} {COPYRIGHT_ENTITY} Muhammad Al-amin (WEBUInet). All Rights Reserved.
 	</div>
 
 	
