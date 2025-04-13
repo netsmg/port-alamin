@@ -11,15 +11,7 @@
 		© {currentYear} {COPYRIGHT_ENTITY} Al-amin (webuinet). All Rights Reserved.
 	</div>
 
-	<!-- Optional credit section -->
-	{/*
-	<div class="end__text"> 
-		Made by Khoa with
-		<ExLink href="https://svelte.dev">
-			<span class="end__svelte">SvelteKit</span>
-		</ExLink>
-	</div>
-	*/}
+	
 </div>
 
 <style>
