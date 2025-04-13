@@ -5,7 +5,7 @@
 
 	let logoDeco = $state();
 	onMount(() => {
-		const phrases = ['wentallout', 'Khoa Nguyen'];
+		const phrases = ['WEBUinet', 'Muhammad Al-amin'];
 		let i = 0;
 
 		const typePhrase = () => {
