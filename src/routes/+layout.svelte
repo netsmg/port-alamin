@@ -3,7 +3,7 @@
 	import '$styles/splash.css';
 	import { onNavigate } from '$app/navigation';
 	import AdGoogle from '$components/common/AdGoogle.svelte';
-	//import BgDeco from '$components/common/BgDeco.svelte';
+        import BgDeco from '$components/common/BgDeco.svelte';
 	import Footer from '$components/layout/footer/Footer.svelte';
 	import NavBar from '$lib/components/layout/header/NavBar.svelte';
 	import VideoCover from '$lib/components/layout/header/VideoCover.svelte';
@@ -39,6 +39,7 @@
 
 
 <Misc />
+<BgDeco />
 <VideoCover />
 <NavBar />
 
